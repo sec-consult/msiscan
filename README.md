@@ -1,6 +1,6 @@
 # MSI Analyzer
 
-This Python script for Linux can analyze Microsoft Windows *.msi Installer files and point out potential vulnerabilites. It was developed by Michael Baer in the SEC Consult Vulnerability Lab.
+This Python script for Linux can analyze Microsoft Windows *.msi Installer files and point out potential vulnerabilites. It was developed by Michael Baer (@derbaer0) in the SEC Consult Vulnerability Lab.
 
 Currently, it is mostly suited for a local privilege escalation also described in our blog post: https://r.sec-consult.com/msi.
 
@@ -10,9 +10,9 @@ The script can also be used to get an overview of an installer and identify pote
 
 ## Keep In Mind
 - This script is work in progress.
-- It is not perfect, but hopefully covers many installers correctly. Please send me installers that have a wrong verdict.
+- It is not perfect, but hopefully covers many installers correctly. Please create a github issue in case you encounter one with a wrong verdict.
 	- false-negatives (if the console application is only indirectly started from the installer)
-	- "false-positives" (same actions are executed conditionally. The script shows the condition but does not evaluate it).
+	- "false-positives" (same actions are executed conditionally. The script shows the condition but does not evaluate it)
 - This script is **NOT** secured against malicious installers.
 
 ## Installation
