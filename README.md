@@ -23,6 +23,8 @@ Install the (apt) package `msitools`. It contains `msiinfo` and `msiextract` tha
 sudo apt install msitools
 ```
 
+The SetOpLock binary helpful to exploit the vulnerability can be found here: https://github.com/googleprojectzero/symboliclink-testing-tools/tree/main/SetOpLock
+
 ## How To Use
 - `python msiscan.py <Installer>`
 - Or if you want to check a whole directory: `./runall.sh <directory>`
@@ -46,5 +48,4 @@ Now, a few explanations to understand the output if you want to invest some time
 
 ## What's next?
 I believe there is still a lot to extract from installer packages. E.g., permissions of folders and services that get installed might quickly identify more LPE vectors.
-
 
